@@ -241,12 +241,12 @@ a:hover {
 	text-align: center;
 	color: black;
 }
-.col-4{
+/* .col-4{
 	left: 200px;
 }
 .col-5{
 	left: 200px;
-}
+} */
 li{
 	list-style: none;
 	padding: 10px 0;
