@@ -1,0 +1,916 @@
+@-ms-viewport {
+	width: device-width
+}
+
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar
+}
+
+*,
+::after,
+::before {
+	box-sizing: inherit
+}
+
+html,
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	
+
+}
+
+hr {
+	max-width: 420px;
+	color: #718093;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.parallax {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: #5352ed;
+	transition: all .2s ease-in;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #192a56;
+	transition: all .2s ease-in;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #3498db;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	padding-right: 19px;
+	padding-left: 19px;
+	font-size: 18px;
+	transition: all .2s ease-in;
+}
+
+#myBtn:hover {
+	background-color: #2980b9;
+	transition: all .2s ease-in;
+}
+
+/* Navbar */
+
+.topnav {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: black;
+	box-shadow: 0px 6px 13px -7px rgba(0, 0, 0, 0.20);
+	transition: all .2s ease-in;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 24px 26px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	color: #3498db;
+	font-size: 16px;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	div .max-width {
+		max-width: 60%;
+		margin: 0 auto;
+		box-shadow: none;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.kamkro {
+		size: 10px;
+	}
+}
+
+/* End Navbar */
+
+#head {
+	background-image: url("https://i.redd.it/v5cyr7kjldn31.png");
+	margin: 0;
+	padding: 222px 0px 222px 0px;
+	text-align: center;
+	color: white;
+}
+
+#head h1 {
+	font-size: 55px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#head h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+#about {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+
+#about h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#about .features {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#about .feature {
+	font-size: 60px;
+	color: #1c2630;
+	margin-top: 17px;
+}
+
+#about h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#about p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#banner {
+	background-image: url("https://minecraft-tutos.com/wp-content/uploads/2020/09/install-shader-minecraft-with-optifine-1200x900.jpg");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+}
+
+#banner2 {
+	background-image: url("https://wallpaperaccess.com/full/4583668.jpg");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+}
+
+#banner3 {
+	background-image: url("https://wallpaperaccess.com/full/4583668.jpg");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+}
+
+#banner4 {
+	background-image: url("https://wallpaperaccess.com/full/5701758.jpg");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+	color: white;
+}
+
+#banner5 {
+	background-image: url("https://wallpaperaccess.com/full/347484.jpg");
+	padding: 75px 0px 75px 0px;
+	text-align: center;
+	color: black;
+}
+
+/* .col-4{
+	left: 200px;
+}
+.col-5{
+	left: 200px;
+} */
+li {
+	list-style: none;
+	padding: 10px 0;
+}
+
+#banner h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner2 h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner2 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner4 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#banner5 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: black;
+}
+
+
+
+#banner3 h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+}
+
+#banner3 h2 {
+	margin-top: 5px;
+	font-size: 20px;
+	color: white;
+}
+
+#staff {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+.col-2 {
+	left: 500px;
+}
+
+.col-3 {
+	left: 500px;
+}
+
+#staff h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#staff h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#staff p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#staff .stafflist {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+}
+
+#staff .staffblock {
+	transform: none;
+	transition: all .2s ease-in;
+	margin-bottom: 5px;
+}
+
+#staff .staffblock:hover {
+	transform: scale(1.1, 1.1);
+	transition: all .2s ease-in;
+}
+
+#gamemodes {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#gamemodes h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#gamemodes h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#gamemodes p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+.dark-mode {
+	background-color: black;
+	color: white;
+}
+
+#gamemodes .gray {
+	/* background-color: #ecf0f1; */
+	padding: 0;
+	margin: -10px;
+}
+
+#gamemodes .mode {
+	margin: 15px;
+	text-align: left;
+	padding: 50px;
+	max-width: 1280px;
+}
+
+#gamemodes .mode-inv {
+	margin: 15px;
+	text-align: right;
+	padding: 50px;
+	max-width: 1280px
+}
+
+@media screen and (min-width: 800px) {
+	#gamemodes .img {
+		margin: 15px;
+		padding: 50px;
+		max-width: 1280px
+	}
+}
+
+@media screen and (max-width: 799px) {
+	#gamemodes .img {
+		padding: 50px 0px 50px 0px;
+	}
+}
+
+#gamemodes .fixed-width {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#vote {
+	margin: 10px;
+	text-align: center;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#vote h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+#vote h2 {
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#vote p {
+	margin-top: 3px;
+	font-size: 18px;
+}
+
+#vote .votelist {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+#vote .voteblock {
+	transform: none;
+	transition: all .2s ease-in;
+}
+
+.voteblock a {
+	font-weight: 700;
+}
+
+
+footer {
+	background-color: #11171e;
+	color: white;
+}
+
+.footer {
+	max-width: 1280px;
+	margin: 0 auto;
+	float: none;
+	padding-top: 66px;
+	padding-bottom: 66px;
+}
+
+.copyright-notice {
+	color: #30343a;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+	cursor: default;
+}
+
+.copyright-notice:hover {
+	color: white;
+	margin: 0;
+	margin-bottom: 0px;
+	padding: 0;
+	text-align: center;
+	transition: all .2s ease-in;
+}
+
+@media screen and (min-width: 800px) {
+	.res-img {
+		width: 480px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.col-2 {
+		left: 30px;
+	}
+
+	.col-3 {
+		left: 100px;
+	}
+
+	.col-4 {
+		left: 0;
+	}
+
+	.col-5 {
+		left: 50px;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.res-img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.res-img-sm {
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.res-img-sm {
+		width: 100%;
+	}
+}
+
+.rmc {
+	margin-left: -400px;
+	font-size: 20px;
+	background: linear-gradient(to right, #f32170, #ff6b08,
+			#cf23cf, #eedd44);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+
+@media screen and (max-width: 800px) {
+	.rmc {
+		margin-left: 0;
+		font-size: 20px;
+		color: red;
+	}
+}
+
+.dost {
+	margin-left: 90px;
+}
+
+@media screen and (max-width: 800px) {
+	.dost {
+		margin-left: 1px;
+	}
+}
+
+.togglee {
+	color: white;
+	margin-left: 1080px;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 24px 26px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.2 ease-in-out;
+}
+
+.togglee:hover {
+	font-size: 18px;
+	color: rgb(206, 197, 197);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.togglee {
+		color: white;
+		margin-left: 1080px;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 24px 26px;
+		text-decoration: none;
+		font-size: 20px;
+		transition: all 0.2 ease-in-out;
+		display: none;
+	}
+
+	.togglee:hover {
+		font-size: 18px;
+		color: rgb(206, 197, 197);
+		cursor: pointer;
+	}
+}
+
+.hai {
+	/* margin-left: 100px; */
+	justify-content: center;
+	align-items: center;
+}
+
+/* .loader-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #4400ffed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+#background {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #3c005b;
+	background: -webkit-radial-gradient(center, ellipse cover, #3c005b 1%, #0d0011 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #3c005b 1%, #0d0011 100%);
+	background: -ie-radial-gradient(center, ellipse cover, #3c005b 1%, #0d0011 100%);
+}
+
+#logocontainer {
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 34vh;
+	height: 34vh;
+	margin-left: -17vh;
+	margin-top: -17vh;
+	overflow: hidden;
+	transition: background-color 500ms;
+	cursor: pointer;
+}
+
+#pelogo img {
+	display: block;
+	position: absolute;
+	left: 2vh;
+	top: 2vh;
+	width: 30vh;
+	height: 30vh;
+
+	background-size: contain;
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 20vh;
+	font-weight: bold;
+	color: #3ebffa;
+	text-align: center;
+	line-height: 30vh;
+}
+
+.loader {
+	display: block;
+	position: absolute;
+	background-color: #3ebffa;
+}
+
+/*Pretty complex animation, so each side needs its own @keyframes.*/
+
+@keyframes slide1 {
+	50% {
+		width: 32vh;
+		margin-left: 0;
+	}
+
+	100% {
+		margin-left: 32vh;
+	}
+}
+
+@keyframes slide2 {
+	50% {
+		height: 32vh;
+		margin-top: 0;
+	}
+
+	100% {
+		margin-top: 32vh;
+	}
+}
+
+@keyframes slide3 {
+	50% {
+		width: 32vh;
+		margin-right: 0;
+	}
+
+	100% {
+		margin-right: 32vh;
+	}
+}
+
+@keyframes slide4 {
+	50% {
+		height: 32vh;
+		margin-bottom: 0
+	}
+
+	100% {
+		margin-bottom: 32vh;
+	}
+}
+/* .loader {
+	width: 80px;
+	height: 80px;
+	border: 10px solid #cccccc;
+	border-top-color: #ef0ce8;
+	border-bottom-color: #ef0ce8;
+	border-radius: 50%;
+	animation: loader-spin 1.5s ease-in-out infinite;
+  }
+
+  @keyframes loader-spin {
+	0% {
+	  transform: rotate(0);
+	}
+
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .visible {
+	display: flex;
+  } */
+
+/* .loader {
+	animation: rotate 1s infinite;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+
+.loader:before,
+.loader:after {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 20px;
+	width: 20px;
+}
+
+.loader:before {
+	animation: ball1 1s infinite;
+	background-color: #0d0000;
+	box-shadow: 30px 0 0 #ff3d00;
+	margin-bottom: 10px;
+}
+
+.loader:after {
+	animation: ball2 1s infinite;
+	background-color: #ff3d00;
+	box-shadow: 30px 0 0 #000000;
+} */
+
+/* .loader {
+	width: 32px;
+	height: 90px;
+	display: block;
+	margin: 20px auto;
+	position: relative;
+	border-radius: 50% 50% 0 0;
+	border-bottom: 10px solid #FF3D00;
+	background-color: #FFF;
+	background-image: radial-gradient(ellipse at center, #FFF 34%, #FF3D00 35%, #FF3D00 54%, #FFF 55%), linear-gradient(#FF3D00 10px, transparent 0);
+	background-size: 28px 28px;
+	background-position: center 20px , center 2px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	animation: animloaderBack 1s linear infinite alternate;
+  }
+  .loader::before {
+	content: '';  
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 64px;
+	height: 44px;
+	border-radius: 50%;
+	box-shadow: 0px 15px #FF3D00 inset;
+	top: 67px;
+  }
+  .loader::after {
+	content: '';  
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	width: 34px;
+	height: 34px;
+	top: 112%;
+	background: radial-gradient(ellipse at center, #ffdf00 8%, rgba(249, 62, 0, 0.6) 24%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 50% 50% 0;
+	background-repeat: no-repeat;
+	background-position: -44px -44px;
+	background-size: 100px 100px;
+	box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
+	box-sizing: border-box;
+	animation: animloader 1s linear infinite alternate;
+  }
+  
+  @keyframes animloaderBack {
+	0%, 30%, 70% {
+	  transform: translateY(0px);
+	}
+	20%, 40%, 100% {
+	  transform: translateY(-5px);
+	}
+  }
+  
+  @keyframes animloader {
+	0% {
+	  box-shadow: 4px 4px 12px 2px rgba(255, 61, 0, 0.75);
+	  width: 34px;
+	  height: 34px;
+	  background-position: -44px -44px;
+	  background-size: 100px 100px;
+	}
+	100% {
+	  box-shadow: 2px 2px 8px 0px rgba(255, 61, 0, 0.5);
+	  width: 30px;
+	  height: 28px;
+	  background-position: -36px -36px;
+	  background-size: 80px 80px;
+	}
+  }
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg) scale(0.8)
+	}
+
+	50% {
+		transform: rotate(360deg) scale(1.2)
+	}
+
+	100% {
+		transform: rotate(720deg) scale(0.8)
+	}
+}
+
+@keyframes ball1 {
+	0% {
+		box-shadow: 30px 0 0 #ff3d00;
+	}
+
+	50% {
+		box-shadow: 0 0 0 #ff3d00;
+		margin-bottom: 0;
+		transform: translate(15px, 15px);
+	}
+
+	100% {
+		box-shadow: 30px 0 0 #ff3d00;
+		margin-bottom: 10px;
+	}
+}
+
+@keyframes ball2 {
+	0% {
+		box-shadow: 30px 0 0 #000000;
+	}
+
+	50% {
+		box-shadow: 0 0 0 #000000;
+		margin-top: -20px;
+		transform: translate(15px, 15px);
+	}
+
+	100% {
+		box-shadow: 30px 0 0 #000000;
+		margin-top: 0;
+	}
+} */
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
